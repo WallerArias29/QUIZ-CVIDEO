@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Cuerpo de la web */
+body{
+    background-image: radial-gradient(circle at 62.28% 119.64%, #ff96ff 0, #ff8bff 16.67%, #e57df3 33.33%, #b46cd8 50%, #865bba 66.67%, #5e4b9f 83.33%, #3c3e87 100%);
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Aca empieza el Header */
+.cabezote{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo{
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo img{
+    width: 300px;
+    padding-left: 10px;
+}
+
+.header_menu{
+    margin-right: 40px;
+    margin-top: 30px;
+}
+.menu{
+    width: 87px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.menu img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.menu a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.header_menu ul{
+    display: none;
+    list-style: none;
+    margin: 0px 0px 0px -14px;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+}
+
+.header_menu:hover ul, ul:hover {
+    display: block; /*despliega el menú*/
+  }
+
+.header_menu li{
+    margin: 10px 0px;
+}
+
+.header_menu li a{
+    color: white;
+    text-decoration: none;
+}
+
+.header_menu li a:hover{
+    text-decoration: underline;
+}
+
+p{
+    color: white;
+    font-size: 16px;
+}
+
+/* Aca termina el Header */
+
+/* Aca empiezan los estilos del titular y el Input */
+.container1{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tituloprincipal{
+    height: 31px;
+    align-content: center;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 26px;
+    margin: 20px 0;
+}
+
+.input{
+    width: 68%;
+    height: 45px;
+    border-radius: 25px;
+    border: 1.8px solid white;
+    padding: 0 15px;
+    background-color:rgba(255, 255, 255, 0.47) ;
+    color: white;
+}
+
+::placeholder { color: white; } 
+
+/* Aca empiezan los estilos del titular y el Carousel */
+.title{
+    color: white;
+    padding-left: 30px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Aca empiezan el Carousel */
+
+.carousel{
+    width: 100%;
+    padding-left: 30px;
+    position: relative;
+    overflow: scroll;
+}
+
+.carousel_container{
+    margin: 70px 0;
+    display: flex;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    font-size: 0px;
+    transition: 450ms transform, 450ms -webkit-transform;
+
+}
+
+.carousel_items{
+    width: 200px;
+    height: 250px;
+    margin-right: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    transform-origin:left;
+    
+}
+
+.carousel_items:hover{
+    transition: 450ms all;
+    transform: scale(1.5);
+    z-index: 1;
+
+}
+
+.carousel_items img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.carousel_items_detalle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    bottom: 0;
+    opacity: 0;
+}
+
+.carousel_items_detalle:hover{
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    transition: 450ms opacity;
+    opacity: 1;
+}
+
+.carousel_items_detalle_img img{
+    width: 20px;
+    height: 20px;
+}
+
+.carousel_items_detalle_titulo{
+    margin: 5px 0px 0px 0px;
+}
+
+.carousel_items_detalle_subtitulo{
+    font-size: 10px;
+    margin: 3px,0px;
+}
+/* Estilos footer */
+
+.footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.footer a:hover{
+    border-bottom: 2px solid white;
+    overflow: hidden;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
